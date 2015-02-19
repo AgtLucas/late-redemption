@@ -12,7 +12,7 @@ gulp.task('browserify', function () {
   return gulp.src('app.js')
     .pipe(browserified)
     .pipe(uglify())
-    .pipe(gulp.dest('app-min.js'));
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('watch', function () {
