@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var transform = require('vinyl-transform');
 var uglify = require('gulp-uglify');
+var reactify = require('reactify');
 
 gulp.task('browserify', function () {
   var browserified = transform(function (filename) {
